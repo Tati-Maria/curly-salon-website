@@ -1,24 +1,39 @@
 import React from 'react'
 import Link from 'next/link';
-import {GiHairStrands} from "react-icons/gi"
+import {GoPrimitiveDot} from "react-icons/go"
 
 const NavBar = () => {
   return (
-    <nav className='py-4 sticky top-0 left-0 h-20 w-screen z-10 shadow-md font-roboto bg-white'>
-      <div className='max-w-[1200px] mx-auto flex items-center justify-between'>
-      <div className='flex items-center text-3xl'>
-      <GiHairStrands className='text-pink-500' />
-      <span className='font-dancingScript text-3xl'>
-        <Link href={"/"}>Tainá</Link>
-        </span>
-      </div>
-      <ul>
-        <li className='bg-amber-800 text-white py-2 px-5 rounded-md hover:bg-white hover:text-pink-500 hover:border-pink-500 border'>
-          <Link href={"/contact"} className="active:text-gray-600 tracking-wider">Agendamento</Link>
-        </li>
-      </ul>
-      </div>
-    </nav>
+    <header className='bg font-roboto'>
+      <nav className='max-w-[1200px] mx-auto text-white py-4 flex items-center justify-between h-[10vh]'>
+        <span className='text-2xl tracking-widest'><span className='border-2 border-white px-2'>C</span>URLY</span>
+        <ul className='flex items-center space-x-10'>
+          <li>
+            <Link href={"/"}>HOME</Link>
+          </li>
+            <li>
+            <Link href={"/about"}>ABOUT</Link>
+            </li>
+            <li>
+            <Link href={"/portfolio"}>PORTFOLIO</Link>
+            </li>
+            <li>
+            <Link href={"/contact"}>CONTACT</Link>
+            </li>
+        </ul>
+      </nav>
+      <section className='text-white max-w-[1200px] mx-auto h-[90vh] flex items-center justify-center'>
+        <div className='flex flex-col items-center justify-center'>
+          <span className='text-7xl text-yellow-400 font-dancingScript'>get noticed</span>
+          <h1 className='flex items-center font-bold text-[120px] tracking-[20px] uppercase gap-5'>
+            <GoPrimitiveDot className='text-2xl' />
+            Fashion
+            <GoPrimitiveDot className='text-2xl' />
+          </h1>
+          <span className='text-semibold tracking-wider'>Lisbon - since 1999</span>
+        </div>
+      </section>
+    </header>
   )
 }
 

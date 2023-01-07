@@ -1,5 +1,6 @@
 import Head from 'next/head'
-
+import Features from '../components/Features'
+import Hero from "../components/Hero"
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        hello world
+      <main className='overflow-hidden'>
+        <Hero />
+        <Features />
       </main>
     </>
   )

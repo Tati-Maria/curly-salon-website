@@ -2,7 +2,9 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div>contact</div>
+    <section className='min-h-screen w-full'>
+
+    </section>
   )
 }
 

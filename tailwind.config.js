@@ -4,7 +4,7 @@ module.exports = {
   "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      roboto: ['Roboto', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
       dancingScript: ['Dancing Script', 'cursive']
     },
     extend: {

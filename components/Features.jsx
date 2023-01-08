@@ -9,7 +9,7 @@ const Features = () => {
       <div className="w-full">
         <Image src={beatiful} alt="woman" />
       </div>
-      <div className="bg-slate-900 flex flex-col items-center justify-center space-y-5 relative w-full">
+      <div className="bg-slate-900 flex flex-col items-center justify-center space-y-5 relative w-full py-20 px-3 lg:px-0 lg:py-0">
         <span className="text-[150px] top-14 font-dancingScript absolute  text-yellow-200 opacity-30">
           Story
         </span>
@@ -22,7 +22,7 @@ const Features = () => {
         </p>
         <button className="border-2 border-white px-16 py-2 text-sm font-semibold uppercase">Read more</button>
       </div>
-      <div className="bg-slate-900 flex flex-col items-center justify-center space-y-5 relative w-full">
+      <div className="bg-slate-900 flex flex-col items-center justify-center space-y-6 relative w-full px-3 order-4 py-20 lg:py-0 lg:order-none lg:px-0">
       <span className="text-[150px] top-14 font-dancingScript absolute  text-yellow-200 opacity-30">
           Process
         </span>

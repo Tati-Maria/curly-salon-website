@@ -19,3 +19,15 @@
     background-size: cover;
     background-position: center;
 }
+
+.cart-btn {
+    @apply bg-yellow-400 flex items-center justify-center gap-2 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max
+}
+
+.red-btn{
+    @apply bg-red-500 flex items-center justify-center gap-2 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max
+}
+
+.prod-container {
+    @apply max-w-[1200px] w-2/5 mx-auto grid grid-cols-1 gap-10 lg:grid-cols-3 lg:w-2/3 place-items-center;
+}

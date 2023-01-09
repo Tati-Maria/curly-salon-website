@@ -5,7 +5,7 @@ import {AiFillMail,
   AiOutlineWhatsApp,  
   AiFillFacebook,
   AiFillInstagram} from "react-icons/ai"
-import {GoLocation} from "react-icons/go"
+
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='max-w-[1200px] gap-10 mx-auto grid grid-cols-1 place-items-center lg:place-items-start lg:grid-cols-3 pb-4'>
         <section className='space-y-4'>
           <h4 className='font-bold text-lg text-center lg:text-start'><span className='border-2 p-1'>C</span>urly</h4>
-          <p className='text-xs lg:text-sm text-center lg:text-start'>Lorem ipsum dolor sit amet<br/> consectetur, adipisicing<br/> elit. Inventore, a.</p>
+          <p className='text-xs lg:text-sm text-center lg:text-start'>Transform your look with<br/> our top-quality styling services</p>
           <div className='flex items-center gap-4 justify-center lg:justify-start'>
             <AiFillMail />
             <AiFillFacebook />

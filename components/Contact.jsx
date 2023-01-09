@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section className='news text-white'>
-        <div className='flex items-center flex-col py-16'>
+    <section className='news text-white py-16'>
+        <div className='flex items-center flex-col'>
             <span className='pb-2 uppercase font-bold text-xs'>Follow our work</span>
             <h3 className='font-bold text-5xl uppercase'>Newsletter</h3>
             <p className='text-center py-5 px-5 lg:px-0'>Get a shiny, satin soft hair with the best hair products & a 

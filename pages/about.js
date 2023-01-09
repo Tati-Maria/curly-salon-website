@@ -1,17 +1,13 @@
 import Image from "next/image";
 import beautiful from "../images/beatiful.jpg";
 import delivery from "../images/delivery.jpg";
+import Title from "../components/Title";
 
 
 const About = () => {
   return (
     <section className='min-h-screen w-full pt-20 pb-20'>
-      <div className='relative'>
-            <span className='absolute inset-0 font-dancingScript text-gray-700 block text-center text-7xl opacity-10'>
-               Curly
-            </span>
-        <h2 className='font-extrabold text-5xl font-poppins text-center py-10 relative z-10'>About Us</h2>
-        </div>
+      <Title title="About Us" subtitle="Curly" />
         <div className='max-w-[1200px] mx-auto grid grid-col-1 lg:grid-cols-2 gap-10 py-10 px-7'>
           <Image src={beautiful} alt="a beautiful woman"/>
           <article className="space-y-4">
@@ -84,10 +80,10 @@ const About = () => {
               <p>Payment is due at the time of service.</p>
             </li>
             <li>
-              <p>For services over $100, we require a 50% deposit to secure the appointment.</p>
+              <p>For services over €100, we require a 50% deposit to secure the appointment.</p>
             </li>
             <li>
-              <p>For services over $500, we require a non-refundable deposit equal to 50% of the service total to secure the appointment.</p>
+              <p>For services over €500, we require a non-refundable deposit equal to 50% of the service total to secure the appointment.</p>
             </li>
           </ul>
         </div>

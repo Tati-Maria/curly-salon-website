@@ -5,6 +5,8 @@ import style3 from "../images/style3.jpg";
 import style4 from "../images/style4.jpg";
 import style5 from "../images/style5.jpg";
 import style6 from "../images/style6.jpg";
+import Title from '../components/Title';
+import Container from '../layout/Container';
 
 
 const Portfolio = () => {
@@ -45,15 +47,15 @@ const Portfolio = () => {
 
   return (
     <section className='w-full text-black pt-20 dark:text-white'>
-        <h2 className='font-extrabold text-5xl font-poppins text-center py-10'>SEE OUR WORK</h2>
-        <div className='max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 pt-7 pb-10 px-4 lg:px-0'>
+        <Title title="See Our Work" subtitle="Our Work" />
+        <Container>
             {hairPhotos.map(photo => (
                 <div className='space-y-3' key={photo.id}>
                     <Image src={photo.photo} alt={photo.name} className="rounded-sm" />
                     <h2 className='text-center font-bold text-xl'>{photo.name}</h2>
                 </div>
             ))}
-        </div>
+        </Container>
     </section>
   )
 }

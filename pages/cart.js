@@ -16,7 +16,7 @@ const Cart = () => {
   
 
   return (
-    <section className='text-black min-h-screen pt-20'>
+    <section className='text-black min-h-screen py-20'>
        <Title title="Shopping Cart" subtitle="Cart" />
        <div className='max-w-[1200px] mx-auto'>
         {cart.length === 0 ? 
@@ -28,18 +28,20 @@ const Cart = () => {
         ): (
           <>
           { cart.map(product => (
-           <CartItem key={product.id} product={product} dispatch={dispatch} />
+            <div key={product.id}>
+              <CartItem  product={product} dispatch={dispatch} />
+            </div>
           ))}
           </>
         )}
         {cart.length > 0 ? (
         <div className='text-center my-5 flex items-center flex-col space-y-2'>
-        <span>Subtotal ({cart.length}) items</span>
+        <span className='pt-5'>Subtotal ({cart.length}) items</span>
         <span>Total: € {total}</span>
         <button className='cart-btn max-w-max'>
             Proceed to Checkout
          </button>
-       </div>): (<span>&nbsp;</span>)}
+       </div>): (<span></span>)}
        </div>
     </section>
   )

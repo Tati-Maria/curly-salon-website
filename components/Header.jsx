@@ -9,7 +9,7 @@ const Header = () => {
     <section className='text-white max-w-[1200px] mx-auto h-full flex items-center justify-center pt-16'>
         <div className='flex flex-col items-center justify-center space-y-5'>
           <span className='text-5xl lg:text-7xl text-yellow-400 font-dancingScript'>get noticed</span>
-          <h1 className='flex items-center font-extrabold text-7xl lg:text-[120px] tracking-[20px] uppercase gap-5'>
+          <h1 className='flex item-center font-extrabold text-5xl md:text-7xl lg:text-[120px] tracking-[20px] uppercase gap-0 lg:gap-5'>
             <GoPrimitiveDot className='text-2xl hidden lg:block' />
             Fashion
             <GoPrimitiveDot className='text-2xl hidden lg:block' />

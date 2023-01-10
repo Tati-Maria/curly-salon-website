@@ -4,7 +4,8 @@ import {AiOutlineClose} from "react-icons/ai"
 
 const ResponsiveNav = ({closeNav}) => {
   return (
-    <div className='block lg:hidden absolute z-20 right-0 top-0 h-screen w-2/5   bg-white text-black dark:text-white dark:bg-black'>
+    <div className='block lg:hidden w-screen h-screen fixed inset-0 bg-black/20 z-10' onClick={closeNav}>
+        <div className='absolute z-20 right-0 top-0 h-screen w-2/5   bg-white text-black dark:text-white dark:bg-black'>
         <button className='cursor-pointer mt-5 w-full ml-3' onClick={closeNav}>
            <AiOutlineClose className='text-red-600 text-2xl text-right' />
         </button>
@@ -36,7 +37,8 @@ const ResponsiveNav = ({closeNav}) => {
         </li>
     </ul>
     </div>
+    </div>
   )
 }
 
-export default ResponsiveNav
+export default ResponsiveNav;

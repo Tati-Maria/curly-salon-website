@@ -20,6 +20,7 @@
     background-position: center;
 }
 
+
 .cart-btn {
     @apply bg-yellow-400 flex items-center justify-center gap-2 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max
 }
@@ -28,6 +29,22 @@
     @apply bg-red-500 flex items-center justify-center gap-2 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max
 }
 
+.policy-list{
+    @apply list-disc space-y-3 text-justify;
+}
+
 .prod-container {
-    @apply max-w-[1200px] w-2/5 mx-auto grid grid-cols-1 gap-10 lg:grid-cols-3 lg:w-2/3 place-items-center;
+    @apply w-2/5 space-y-10;
+}
+
+.contact-box{
+    @apply flex items-center gap-4  p-3 rounded-md shadow;
+}
+
+.input-container{
+    @apply flex flex-col space-y-2 lg:flex-row lg:space-y-2 lg:gap-5
+}
+
+.input-box{
+    @apply p-2 text-black rounded w-full mt-2 border border-black;
 }

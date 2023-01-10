@@ -18,8 +18,8 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='fixed inset-0 bg-black  h-[10vh] shadow z-20 font-poppins'>
-        <div className='max-w-[1200px] mx-auto text-white py-4  px-7 lg:px-0 flex items-center justify-between relative'>
+      <nav className='fixed inset-0 bg-black  max-h-[10vh] shadow z-20 font-poppins'>
+        <div className='max-w-[1200px] mx-auto text-white pt-7  px-7 lg:px-0 flex items-center justify-between relative'>
         <Link href={"/"}>
         <span className='text-2xl tracking-widest'><span className='border-2 border-white px-2'>C</span>URLY</span>
         </Link>

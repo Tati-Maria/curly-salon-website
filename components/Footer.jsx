@@ -25,8 +25,8 @@ const Footer = () => {
           <h4 className='font-bold text-lg text-center lg:text-start'>Contact</h4>
           <address className='text-sm font-light'>Avenida Brasileira 34, Lisboa 7354</address>
           <p className='flex flex-col text-center lg:text-start'>
-            <span className='text-light text-xs lg:text-sm'>thecurlysalon@gmail.com</span>
-            <span className='text-light text-xs lg:text-sm'>234 898 6760</span>
+            <span className='text-light text-xs lg:text-sm'>curlysalon@gmail.com</span>
+            <span className='text-light text-xs lg:text-sm'>+351 234 898 6760</span>
           </p>
         </section>
         <section className='space-y-3'>
@@ -52,8 +52,7 @@ const Footer = () => {
       <div className='border-t pt-4'>
       <p className='text-center text-gray-300 italic text-xs'>
       Credits images from 
-      <Link className='underline' href="https://www.pexels.com/pt-br/@pixabay/">
-          Pexels and </Link><Link className='underline' href="https://unsplash.com/s/photos/hair-salon">
+      <Link className='underline' href="https://www.pexels.com/pt-br/@pixabay/"> Pexels and </Link><Link className='underline' href="https://unsplash.com/s/photos/hair-salon">
           Unsplash
         </Link>
       </p>

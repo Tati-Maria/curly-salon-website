@@ -19,8 +19,8 @@ const Product = ({product}) => {
         (<button onClick={() => dispatch({
             type: "REMOVE_FROM_CART", payload: product
         })} className="red-btn">
-        <span>Remove from Cart</span>
-        <BsCartXFill />
+        <span>Remove</span>
+        <BsCartXFill size={20} />
         </button>) : 
         (<button onClick={() => dispatch({
             type: "ADD_TO_CART", payload: product

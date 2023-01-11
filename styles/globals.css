@@ -3,22 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-1.jpg);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* .news{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/salon\ \(1\).jpg);
-    height: 50vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-} */
 
 /*Hero*/
 .hero{

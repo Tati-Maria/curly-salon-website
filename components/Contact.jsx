@@ -1,8 +1,8 @@
-import React from 'react'
+import salon from "../images/salon.jpg"
 
 const Contact = () => {
   return (
-    <section className='news text-white py-16'>
+    <section className=" text-white py-16 h-[50vh] w-full bg-center" style={{backgroundImage: `url(${salon})`}}>
         <div className='flex items-center flex-col'>
             <span className='pb-2 uppercase font-bold text-xs'>Follow our work</span>
             <h3 className='font-bold text-5xl uppercase'>Newsletter</h3>

@@ -18,8 +18,8 @@ const Staff = () => {
           <Image src={john}  alt="Johnatah staff member" className='shadow-xl shadow-slate-100' />
           <div className='flex flex-col items-center text-center space-y-2'>
             <h4 className='font-bold uppercase'>Johnatan Jackson</h4>
-            <span className='uppercase text-xs'>Haircuts</span>
-            <div className='flex items-center gap-5 text-xl cursor-pointer pt-4'>
+            <span className='uppercase text-xs'>Haircut Specialist</span>
+            <div className='staff-icons'>
               <AiOutlineFacebook />
               <AiFillTwitterCircle />
               <AiFillInstagram />
@@ -32,7 +32,7 @@ const Staff = () => {
           <div className='flex flex-col items-center text-center space-y-2'>
             <h4 className='uppercase font-bold'>Maya Jacobs</h4>
             <span className='uppercase text-xs'>Coloring Artist</span>
-            <div className='flex items-center gap-5 text-xl cursor-pointer pt-4'>
+            <div className='staff-icons'>
               <AiOutlineFacebook />
               <AiFillTwitterCircle />
               <AiFillInstagram />
@@ -45,7 +45,7 @@ const Staff = () => {
           <div className='flex flex-col items-center text-center space-y-2'>
             <h4 className='uppercase font-bold'>Samanth Majkovsky</h4>
             <span className='uppercase text-xs'>Coloring Artist</span>
-            <div className='flex items-center gap-5 text-xl cursor-pointer pt-4'>
+            <div className='staff-icons'>
               <AiOutlineFacebook />
               <AiFillTwitterCircle />
               <AiFillInstagram />

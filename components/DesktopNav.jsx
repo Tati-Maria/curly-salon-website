@@ -3,7 +3,7 @@ import React from 'react'
 
 const DesktopNav = () => {
   return (
-    <ul className='items-center space-x-10 hidden lg:flex'>
+    <ul className='nav-ul'>
           <li>
             <Link href={"/"}>HOME</Link>
           </li>
@@ -11,7 +11,7 @@ const DesktopNav = () => {
             <Link href={"/about"}>ABOUT</Link>
             </li>
             <li>
-            <Link href={"/portfolio"}>PORTFOLIO</Link>
+            <Link href={"/services"}>SERVICES</Link>
             </li>
             <li>
             <Link href={"/products"}>PRODUCTS</Link>

@@ -1,3 +1,15 @@
+import style1 from "../images/style-1.jpg";
+import style2 from "../images/style-2.jpg"
+import style3 from "../images/style-3.jpg"
+import style4 from "../images/style-4.jpg"
+import style5 from "../images/style-5.jpg";
+import style6 from "../images/style-6.jpg";
+import style7 from "../images/style-7.jpg";
+import style8 from "../images/style-8.jpg";
+import style9 from "../images/style-9.jpg";
+import style10 from "../images/style-10.jpg";
+
+
 export const reviews = [
     {
         id: 1,
@@ -42,4 +54,17 @@ export const reviews = [
         desc: "I was hesitant to try a new hair salon, but I'm so glad I did! The stylist I had was amazing, they took their time to understand what I wanted, and I was really impressed by the final result. The atmosphere of the salon was also really relaxing and comfortable, definitely the best hair salon experience I've had so far."
     },
 
-]
+];
+
+export const styles = [
+    style1,
+    style2,
+    style3,
+    style4,
+    style5,
+    style6,
+    style7,
+    style8,
+    style9,
+    style10
+];

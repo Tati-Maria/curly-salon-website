@@ -2,6 +2,7 @@ import Image from "next/image";
 import beautiful from "../images/beatiful.jpg";
 import Title from "../components/Title";
 import ReviewCard from "../components/ReviewCard";
+import Link from "next/link";
 
 
 
@@ -40,7 +41,7 @@ const About = () => {
             <ReviewCard />
           </div>
         </div>
-        <p className="text-center text-gray-500 pt-40 text-sm">Curly Hair Salon All Rights Reserved &copy;</p>
+        <p className="text-center text-gray-500 pt-40 text-sm">Curly Hair Salon All Rights Reserved &copy; <Link className="text-blue-400 underline" href={"/policy"}>See our policy</Link></p>
     </section>
   )
 }

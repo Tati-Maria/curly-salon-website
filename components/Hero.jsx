@@ -2,9 +2,9 @@
 
 const Hero = () => {
   return (
-    <section id="hero" className="max-w-[1000px] mx-auto grid grid-cols-1 lg:grid-cols-3 place-items-center uppercase py-16">
+    <section id="hero" className="hero">
       <div className="text-gray-900 place-content-end">
-        <h2 className="font-bold text-2xl text-center lg:text-end tracking-wider pb-10 lg:pb-0">Working<br/> Hours</h2>
+        <h2 className="hero-title">Working<br/> Hours</h2>
       </div>
       <ul className="flex flex-col col-span-2 w-full px-8 lg:px-0">
         <li className="flex justify-between py-2 border-b-2 border-grey-600">

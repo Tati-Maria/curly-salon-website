@@ -18,22 +18,24 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='fixed inset-0 bg-black  max-h-[10vh] shadow z-20 font-poppins'>
-        <div className='max-w-[1200px] mx-auto text-white pt-7  px-7 lg:px-0 flex items-center justify-between relative'>
+      <nav className='nav'>
+        <div className='nav-container'>
         <Link href={"/"}>
         <span className='text-2xl tracking-widest'><span className='border-2 border-white px-2'>C</span>URLY</span>
         </Link>
         <DesktopNav />
         {open && <ResponsiveNav closeNav={handleNav} />}
-        <button className="flex-grow lg:flex-grow-0">
-          <Link href={"/cart"} className="flex justify-end relative pr-5">
+        <div className='flex gap-3'>
+        <button>
+          <Link href={"/cart"} className="flex justify-end relative">
           <AiOutlineShoppingCart className="text-3xl" />
-          <span className='text-lg bg-yellow-400 px-2 rounded-full text-black'>{cart.length}</span>
+          <span className='cart'>{cart.length}</span>
           </Link>
         </button>
         <button className='block lg:hidden' onClick={handleNav}>
           <AiOutlineMenu className='text-3xl' />
         </button>
+        </div>
         </div>
       </nav>
     </>

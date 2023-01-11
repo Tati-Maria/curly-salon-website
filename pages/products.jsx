@@ -2,6 +2,7 @@ import Link from "next/link";
 import Title from "../components/Title";
 import { CartState } from "../context/Context";
 import Product from "../components/Product";
+import Container from "../layout/Container"
 
 const Products = () => {
     const {state: {products}} = CartState();
@@ -9,7 +10,8 @@ const Products = () => {
   return (
     <section className='text-black pt-20 pb-20'>
        <Title title="See Our Products" subtitle="Products" />
-        <ul className='prod-container mx-w-[1200px] mx-auto'>
+       <Container>
+        <ul className='grid grid-cols-1 lg:grid-cols-3 items-center gap-20'>
             {products.map(product => (<Product key={product.id} product={product} />
             ))}
         </ul>
@@ -17,6 +19,7 @@ const Products = () => {
           See about our delivery & return policy 
         <Link href={"/policy"} className="underline text-blue-800"> Here</Link>
         </p>
+       </Container>
     </section>
   )
 }

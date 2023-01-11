@@ -8,7 +8,7 @@ const Product = ({product}) => {
 
 
   return (
-    <li className='space-y-2'>
+    <li className='space-y-3'>
         <Image src={product.image} alt={product.name} priority="high" className="rounded-sm object-cover shadow" />
         <div className="flex flex-col lg:flex-row lg:items-center justify-between px-1">
             <h4 className="text-base lg:text-lg">{product.name}</h4>

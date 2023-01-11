@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Services = () => {
 
   return (
-    <section className='w-full text-black py-20 dark:text-white px-6'>
+    <section className='w-full text-black py-20  px-6'>
         <Title title="Services" subtitle="Our Work" />
         <Container>
            <p className='text-center lg:w-[60ch] mx-auto pb-7'>

@@ -2,7 +2,7 @@ import salon from "../images/salon.jpg"
 
 const Contact = () => {
   return (
-    <section className={`h-[50vh] py-16 text-white bg-hero-contact bg-cover bg-center`}>
+    <section className={`h-[50vh] py-16 text-white bg-heroContact bg-cover bg-center`}>
         <div className='flex items-center flex-col'>
             <span className='pb-2 uppercase font-bold text-xs'>Follow our work</span>
             <h3 className='font-bold text-5xl uppercase'>Newsletter</h3>

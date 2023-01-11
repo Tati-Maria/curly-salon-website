@@ -2,11 +2,11 @@ import React from 'react';
 import {GoPrimitiveDot} from "react-icons/go";
 import Link from 'next/link';
 import {AiOutlineArrowDown} from "react-icons/ai"
-import hero from "../images/hero-1.jpg"
+
 
 const Header = () => {
   return (
-    <header className='font-poppins h-screen bg-hero-header bg-center bg-cover'>
+    <header className='font-poppins h-screen bg-hero bg-center bg-cover'>
     <section className='text-white max-w-[1200px] mx-auto h-full flex items-center justify-center pt-16'>
         <div className='flex flex-col items-center justify-center space-y-5'>
           <span className='text-5xl lg:text-7xl text-yellow-400 font-dancingScript'>get noticed</span>

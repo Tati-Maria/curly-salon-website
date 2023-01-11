@@ -4,7 +4,7 @@ import {AiOutlineClose} from "react-icons/ai"
 
 const ResponsiveNav = ({closeNav}) => {
   return (
-    <div className='overlay' onClick={closeNav}>
+    <div className='overlay duration-300' onClick={closeNav}>
         <div className='nav-responsive-container'>
         <button className='cursor-pointer mt-5 w-full ml-3' onClick={closeNav}>
            <AiOutlineClose className='text-red-600 text-2xl text-right' />

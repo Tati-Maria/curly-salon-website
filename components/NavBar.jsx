@@ -8,6 +8,7 @@ import DesktopNav from './DesktopNav';
 import ResponsiveNav from './ResponsiveNav';
 import { CartState } from '../context/Context';
 
+
 const NavBar = () => {
   const [open , setOpen] = useState(false);
   const {state: {cart}} = CartState();

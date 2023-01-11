@@ -11,8 +11,9 @@ const Products = () => {
     <section className='text-black pt-20 pb-20'>
        <Title title="See Our Products" subtitle="Products" />
        <Container>
-        <ul className='grid grid-cols-1 lg:grid-cols-3 items-center gap-20'>
-            {products.map(product => (<Product key={product.id} product={product} />
+        <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10 '>
+            {products.map(product => (
+            <Product key={product.id} product={product} />
             ))}
         </ul>
         <p className="text-center text-sm mt-12">

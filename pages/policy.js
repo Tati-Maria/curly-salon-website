@@ -3,7 +3,7 @@ import Title from '../components/Title';
 
 const Policy = () => {
   return (
-    <section className='min-h-screen w-full pt-20 pb-10 px-4 lg:px-0 text-gray-900 dark:text-white'>
+    <section className='min-h-screen w-full pt-20 pb-10 px-4 lg:px-0 text-gray-900'>
       <Title title="Our Policy" subtitle="Policy" />
       <div className='max-w-[1200px] mx-auto grid grid-cols-1 gap-9 lg:grid-cols-2 place-items-center py-10 px-6 lg:px-0'>
         <div className='py-1'>

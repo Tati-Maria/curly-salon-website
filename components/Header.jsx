@@ -1,16 +1,20 @@
-import React from 'react';
+import Image from "next/image";
 import {GoPrimitiveDot} from "react-icons/go";
 import Link from 'next/link';
 import {AiOutlineArrowDown} from "react-icons/ai"
-import hero from "../images/hero-1.jpg"
+import hero from "../images/hero-1.jpg";
+import heroMobile from "../images/1.png"
 
 const Header = () => {
   return (
-    <header className='font-poppins h-screen bg-hero bg-center bg-cover' style={{backgroundImage: `url(../images/hero)})`}}>
-    <section className='text-white max-w-[1200px] mx-auto h-full flex items-center justify-center pt-16'>
+    <header className='font-poppins h-screen relative'>
+      <Image src={hero} alt="woman" className="absolute inset-0 h-full bg-cover bg-center w-full z-0 hidden sm:block" />
+      <Image src={heroMobile} alt="woman" className="block absolute inset-0 bg-cover h-full  sm:hidden" />
+      <div className="absolute inset-0 h-full bg-black/40 z-10"></div>
+    <section className='text-white max-w-[1200px] mx-auto h-full flex items-center justify-center pt-16 relative z-20'>
         <div className='flex flex-col items-center justify-center space-y-5'>
           <span className='text-5xl lg:text-7xl text-yellow-400 font-dancingScript'>get noticed</span>
-          <h1 className='flex item-center font-extrabold text-5xl md:text-7xl lg:text-[120px] tracking-[20px] uppercase gap-0 lg:gap-5'>
+          <h1 className='flex item-center font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[120px] tracking-[20px] uppercase gap-0 lg:gap-5'>
             <GoPrimitiveDot className='text-2xl hidden lg:block' />
             Fashion
             <GoPrimitiveDot className='text-2xl hidden lg:block' />

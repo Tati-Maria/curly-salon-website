@@ -11,8 +11,24 @@ const Cart = () => {
 
   //calculate the total price
   useEffect(() => {
-    setTotal(cart.reduce((prev, curr) => prev + Number(curr.price)*curr.qty, 0))
-  }, [cart])
+    setTotal(cart.reduce((prev, curr) => prev + Number(curr.price) *curr.qty, 0).toFixed(2))
+  }, [cart]);
+
+  const checkout = async () => {
+    await fetch("http://localhost:4000/checkout", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({items: cart})
+    }).then((res) => {
+      return res.json();
+    }).then((res) => {
+      if(res.url) {
+        window.location.assign(res.url); //send user to stripe checkout
+      }
+    })
+  }
   
 
   return (
@@ -38,7 +54,7 @@ const Cart = () => {
         <div className='text-center my-5 flex items-center flex-col space-y-2'>
         <span className='pt-5'>Subtotal ({cart.length}) items</span>
         <span>Total: € {total}</span>
-        <button className='cart-btn max-w-max'>
+        <button className='cart-btn max-w-max' onClick={checkout}>
             Proceed to Checkout
          </button>
        </div>): (<span></span>)}

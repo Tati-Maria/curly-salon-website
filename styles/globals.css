@@ -60,6 +60,10 @@
     @apply bg-red-500 flex items-center justify-center gap-2 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max duration-300;
 }
 
+.success-btn{
+    @apply bg-green-500 text-white border-2 border-green-400 py-1 px-4 rounded-md shadow-sm w-full lg:max-w-max;
+}
+
 .red-btn:hover,
 .red-btn:active,
 .red-btn:focus{

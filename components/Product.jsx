@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { BsCartPlusFill, BsCartXFill} from "react-icons/bs";
 import { CartState } from '../context/Context';
-import {motion} from "framer-motion"
 
 const Product = ({product}) => {
     const {state: { cart }, dispatch} = CartState()

@@ -6,12 +6,10 @@ import {
 } from "react-icons/ai";
 import DesktopNav from './DesktopNav';
 import ResponsiveNav from './ResponsiveNav';
-import { CartState } from '../context/Context';
 
 
 const NavBar = () => {
   const [open , setOpen] = useState(false);
-  const {state: {cart}} = CartState();
 
   function handleNav() {
     setOpen(!open);
@@ -26,14 +24,8 @@ const NavBar = () => {
         </Link>
         <DesktopNav />
         {open && <ResponsiveNav closeNav={handleNav} />}
-        <div className='flex gap-3'>
-        <button>
-          <Link href={"/cart"} className="flex justify-end relative">
-          <AiOutlineShoppingCart className="text-3xl" />
-          <span className='cart'>{cart.length}</span>
-          </Link>
-        </button>
-        <button className='block lg:hidden' onClick={handleNav}>
+        <div className='block lg:hidden'>
+        <button className='' onClick={handleNav}>
           <AiOutlineMenu className='text-3xl' />
         </button>
         </div>
@@ -43,4 +35,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;

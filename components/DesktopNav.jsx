@@ -14,9 +14,6 @@ const DesktopNav = () => {
             <Link href={"/services"}>SERVICES</Link>
             </li>
             <li>
-            <Link href={"/products"}>PRODUCTS</Link>
-            </li>
-            <li>
             <Link href={"/contact"}>CONTACT</Link>
             </li>
         </ul>

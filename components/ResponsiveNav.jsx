@@ -26,11 +26,6 @@ const ResponsiveNav = ({closeNav}) => {
             </Link>
         </li>
         <li>
-            <Link href={"/products"}>
-                PRODUCTS
-            </Link>
-        </li>
-        <li>
             <Link href={"/contact"}>
                 CONTACT
             </Link>

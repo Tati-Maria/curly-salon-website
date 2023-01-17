@@ -123,6 +123,8 @@
     @apply text-lg bg-yellow-400 px-2 rounded-full text-black;
 }
 
+
+
 /*Desktop nav*/
 .nav-ul{
     @apply items-center space-x-10 hidden lg:flex;

@@ -25,7 +25,7 @@ const Product = ({product}) => {
         (<button onClick={() => dispatch({
             type: "ADD_TO_CART", payload: product
         })} className="cart-btn">
-        <span>Add to Cart</span>
+        <span>Add </span>
         <BsCartPlusFill />
     </button>)
         }
